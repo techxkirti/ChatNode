@@ -1,0 +1,8 @@
+.msg-bubble-blue {
+    background-color: #e3f2fd; /* Very light blue */
+    border: 1px solid #bbdefb;
+    color: #0d47a1;
+    padding: 12px 16px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
