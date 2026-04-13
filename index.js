@@ -29,7 +29,7 @@ async function main() {
 }
 
 app.get("/", (req, res)=> {
-    res.send("Root is working.");
+    res.redirect("/chats");
 });
 
 //Index Route: 
