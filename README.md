@@ -3,7 +3,7 @@
 A sleek, lightweight messaging application built with the **MEN stack** (MongoDB, Express.js, Node.js). This project features a responsive UI styled with **Bootstrap 5** and custom CSS, supporting full CRUD operations for chat management.
 
 ## 🔗 Live Demo
-Check out the live application here: **[Insert Your Live Link Here]**  
+Check out the live application here: **[https://chatnode-uqfq.onrender.com]**  
 
 ## 📸 Project Gallery
 
@@ -67,7 +67,7 @@ Ensure you have **Node.js** and **MongoDB** installed on your system.
 
 ### 2. Clone the Repository
 ```bash
-git clone <your-repository-link>
+git clone https://github.com/techxkirti/ChatNode.git
 cd ChatNode
 ```
 
@@ -77,22 +77,42 @@ Install all necessary packages listed in package.json:
 npm install
 ```
 
-### 4. Database Setup
+### 4. Set up Environment Variables
+Create a .env file in the root directory and add your MongoDB Atlas URI:
+```env
+ATLAS_DB_URL=your_mongodb_atlas_connection_string
+```
+
+### 5. Database Setup
 Start your local MongoDB server. By default, the app connects to:
 mongodb://127.0.0.1:27017/ChatNode
 
-### 5. Seed the Database
+### 6. Seed the Database
 Before running the app, populate your database with some initial chat data to see the UI in action:
 ```bash
 node init.js
 ```
 
-### 6. Start the Server
+### 7. Start the Server
 Run the following command to start the Express server:
 ```bash
-node index.js
+npm start
 ```
 
-### 7. Access the App
+### 8. Access the App
 Open your web browser and go to:
-http://localhost:3000/chats
+http://localhost:3000
+
+---
+## 📈 Evolution: From ChatNode to Wanderlust
+
+After mastering the RESTful fundamentals in this **ChatNode** project, I graduated to building **[Wanderlust](https://github.com/techxkirti/Wanderlust.git)**—a comprehensive full-stack Airbnb clone. 
+
+While **ChatNode** focuses on core CRUD and MEN stack basics, **Wanderlust** takes it further with:
+- **Cloud Database**: Full integration with **MongoDB Atlas** for persistent storage.
+- **Authentication**: Secure user login and signup using **Passport.js**.
+- **Cloud Media**: Professional image hosting and management via the **Cloudinary API**.
+- **Complex UI**: Advanced styling and interactive maps.
+
+🚀 **[Explore Wanderlust Live Here](https://wanderlust-w2pl.onrender.com/listings)**  
+📁 **[Wanderlust Repository](https://github.com/techxkirti/Wanderlust.git)**
